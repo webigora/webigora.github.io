@@ -1,0 +1,80 @@
+@mixin reset {
+	* {
+		margin: 0;
+		padding: 0;
+	}
+
+	*, *:before, *:after {
+	    -webkit-box-sizing: border-box;
+	    -moz-box-sizing: border-box;
+	    box-sizing: border-box;
+	}
+
+	img {
+		border: none;
+		vertical-align: top;
+	}
+
+	a, button, input, textarea, select {
+		outline: none;
+	}
+
+	input[type="submit"] {
+		-webkit-appearance: none;
+	}
+
+	ul {
+		list-style-type: none;
+	}
+
+	header, nav, section, article, aside, footer {
+		display: block;
+	}
+}
+
+@mixin clearfix {
+	&:after {
+		content: "";
+		display: block;
+		clear: both;
+	}
+}
+
+@mixin transition($args...) {
+	-webkit-transition: $args;
+	-moz-transition: $args;
+	-ms-transition: $args;
+	-o-transition: $args;
+	transition: $args;
+}
+
+@mixin centerer($horizontal: true, $vertical: true) {
+	position: absolute;
+	@if ($horizontal and $vertical) {
+		top: 50%;
+		left: 50%;
+		-webkit-transform: translate(-50%, -50%);
+		-ms-transform: translate(-50%, -50%);
+		transform: translate(-50%, -50%);
+	} 
+	@else if ($horizontal) {
+		left: 50%;
+		-webkit-transform: translate(-50%, 0);
+		-ms-transform: translate(-50%, 0);
+		transform: translate(-50%, 0);
+	} 
+	@else if ($vertical) {
+		top: 50%;
+		-webkit-transform: translate(0, -50%);
+		-ms-transform: translate(0, -50%);
+		transform: translate(0, -50%);
+	}
+}
+
+@mixin placeholder {
+	&::-webkit-input-placeholder { @content; }
+	&:-moz-placeholder           { @content; }
+	&::-moz-placeholder          { @content; }
+	&:-ms-input-placeholder      { @content; }  
+}
+

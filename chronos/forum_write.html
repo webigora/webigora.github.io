@@ -1,0 +1,522 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="style.css">
+
+<title>Chronos</title>
+
+<!--[if lt IE 9]>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+	<div class="sidebar scroll_content">
+		<div class="sidebar_inner">
+			<div class="sidebar_top">
+				<header class="sidebar_header hidden_mobile">
+					<a class="sidebar_logo" href="/"><img src="images/logo.png" alt="Logo"></a>
+				</header>
+				<div class="sidebar_profile">
+					<div class="sidebar_profile_top">
+						<div class="sidebar_profile_photo">
+							<img src="images/profile_photo.jpg" alt="Bailey Smith">
+							<span class="sidebar_profile_initials">BS</span>
+							<label class="profile_photo_upload">
+								<div class="photo_change">
+									<svg class="svg_icon_attach">
+									    <use xlink:href="images/sprite/sprite.svg#icon_attach"></use>
+									</svg>
+									<p class="photo_change_text">Change your <br>profile photo</p>
+									<div class="photo_change_download">
+										<div class="photo_change_progress"><span></span></div>
+										<a class="photo_change_remove" href="#">
+											<svg class="svg_remove_photo">
+											    <use xlink:href="images/sprite/sprite.svg#remove_photo"></use>
+											</svg>
+										</a>
+									</div>
+								</div>
+								<input type="file">
+							</label>
+						</div>
+						<p class="sidebar_profile_name">Bailey Smith</p>
+					</div>
+				</div>
+				<nav class="sidebar_nav hidden_mobile">
+					<ul>
+						<li><a href="#">Browse forum</a></li>
+						<li><a href="#">Weight Loss</a></li>
+						<li><a href="#">Diet</a></li>
+						<li><a href="#">Healthcare</a></li>
+						<li><a href="#">Fitness</a></li>
+					</ul>
+				</nav>
+			</div>
+			<footer class="sidebar_footer hidden_mobile">
+				<div class="sidebar_bottom no_border">
+					<a class="btn" href="#">Write a post</a>
+				</div>
+				<div class="sidebar_bottom">
+					<a class="back_button" href="#">
+						<svg class="svg_arrow_left">
+						    <use xlink:href="images/sprite/sprite.svg#arrow_left"></use>
+						</svg>
+						<span>Go to my profile</span>
+					</a>
+				</div>
+			</footer>
+		</div>
+	</div>
+	<div class="navbar_mobile scroll_content">
+		<div class="navbar_mobile_inner">
+			<div class="navbar_mobile_top">
+				<form class="header_search_form" action="#" method="post">
+					<svg class="svg_icon_search">
+					    <use xlink:href="images/sprite/sprite.svg#icon_search"></use>
+					</svg>
+					<input class="header_search_field" type="text" placeholder="Search the forum...">
+					<div class="header_search_close">
+						<svg class="svg_close">
+						    <use xlink:href="images/sprite/sprite.svg#close"></use>
+						</svg>
+					</div> 
+				</form>
+				<nav class="nav_mobile">
+					<ul>
+						<li><a href="#">Your profile</a></li>
+						<li><a href="#">Your group</a></li>
+						<li><a href="#">Write a post</a></li>
+					</ul>
+				</nav>
+			</div>
+			<div class="navbar_mobile_bottom">
+				<nav class="header_nav">
+					<a href="#">Forum</a>
+					<a href="#">Survey</a>
+					<a class="header_logout" href="#confirm_logout">Log Out</a>
+				</nav>
+			</div>
+		</div>
+	</div>
+	<div class="main_content">
+		<header class="header">
+			<div class="header_left">
+				<form class="header_search_form hidden_mobile" action="#" method="post">
+					<svg class="svg_icon_search">
+					    <use xlink:href="images/sprite/sprite.svg#icon_search"></use>
+					</svg>
+					<input class="header_search_field" type="text" placeholder="Search the forum...">
+					<div class="header_search_close">
+						<svg class="svg_close">
+						    <use xlink:href="images/sprite/sprite.svg#close"></use>
+						</svg>
+					</div> 
+				</form>
+				<a class="logo_mobile visible_mobile" href="/"><img src="images/logo.png" alt="Logo"></a>
+			</div>
+			<div class="header_right">
+				<nav class="header_nav hidden_mobile">
+					<a href="#">Forum</a>
+					<a href="#">Survey</a>
+					<a class="header_logout" href="#confirm_logout">Log Out</a>
+				</nav>
+				<div class="header_messages is_messages">
+					<svg class="svg_icon_bell">
+					    <use xlink:href="images/sprite/sprite.svg#icon_bell"></use>
+					</svg>
+					<span class="header_messages_number">16</span>
+				</div>
+				<div class="header_toggle visible_mobile">
+					<button class="header_toggle_button">
+						<span>Toggle menu</span>
+					</button>
+				</div>
+			</div>
+		</header>
+		<div class="content_wrap">
+			<section class="section_content">
+				<header class="forum_category_header">
+					<h1 class="content_title">Write a Post</h1>
+					<p class="forum_category_cancel">
+						<a href="#">
+							<svg class="svg_close">
+							    <use xlink:href="images/sprite/sprite.svg#close"></use>
+							</svg>
+							<span>Cancel</span>
+						</a>
+					</p>
+				</header>
+				<div class="forum_write">
+					<form class="forum_write_form" action="#" method="post">
+						<div class="write_form_section">
+							<p class="write_form_title">Select a Category:</p>
+							<div class="write_form_category">
+								<label class="form_radio">
+									<input type="radio" name="write_cayegory" checked="checked">
+									<span>Weight loss</span>
+								</label>
+								<label class="form_radio">
+									<input type="radio" name="write_cayegory">
+									<span>Diet</span>
+								</label>
+								<label class="form_radio">
+									<input type="radio" name="write_cayegory">
+									<span>Healthcare</span>
+								</label>
+								<label class="form_radio">
+									<input type="radio" name="write_cayegory">
+									<span>Fitness</span>
+								</label>
+							</div>
+						</div>
+						<div class="write_form_section">
+							<p class="write_form_title">Title of Your Post:</p>
+							<textarea class="field_forum_title" maxlength="120" placeholder="What’s on Your mind? (max length 120 characters)"></textarea>
+						</div>
+						<div class="write_form_section">
+							<p class="write_form_title">Body text:</p>
+							<textarea class="field_forum_body" placeholder="Type your post here"></textarea>
+						</div>
+						<div class="write_form_section form_bottom">
+							<input class="form_bottom_send btn" type="submit" value="Post">
+							<div class="form_bottom_photos"></div>
+							<div class="form_bottom_download">
+								<div class="form_bottom_progress"><span></span></div>
+								<a class="form_bottom_remove" href="#">
+									<svg class="svg_remove_photo">
+									    <use xlink:href="images/sprite/sprite.svg#remove_photo"></use>
+									</svg>
+								</a>
+							</div>
+							<label class="form_attach_photo">
+								<svg class="svg_icon_attach">
+								    <use xlink:href="images/sprite/sprite.svg#icon_attach"></use>
+								</svg>
+								<span class="form_attach_text">Attach a photo</span>
+								<input class="form_attach_file" type="file" multiple="multiple">
+							</label>
+						</div>
+					</form>
+				</div>
+			</section>
+		</div>
+		<footer class="footer">
+			<p class="footer_cop">Copyright &copy;2017 Chronos - All Rights Reserved</p>
+			<div class="footer_contacts">
+				<p>Phone: <a href="tel:5042674549">(504) 267-4549</a></p>
+				<p>Email: <a href="mailto:info@chronosbhw.com">info@chronosbhw.com</a></p>
+			</div>
+		</footer>
+	</div>
+
+	<div class="notifactions_side">
+		<div class="notifactions_inner">
+			<div class="notifactions_top">
+				<p class="notifactions_title">Notifications</p>
+				<a class="notifactions_close" href="#">
+					<svg class="svg_close">
+					    <use xlink:href="images/sprite/sprite.svg#close"></use>
+					</svg>
+				</a>
+			</div>
+			<div class="notifactions_wrap scroll_content">
+				<a class="notifaction_box online" href="/#notifaction_scroll">
+					<div class="notifaction_photo_wrap">
+						<div class="photo_small">
+							<span class="photo_initials_small">KB</span>
+							<img src="images/notifaction_photo1.jpg" alt="">
+						</div>
+					</div>
+					<div class="notifaction_info">
+						<p class="notifaction_text">Kate Blunt left a comment on your profile</p>
+						<p class="notifaction_date">2 seconds ago</p>
+					</div>
+				</a>
+				<a class="notifaction_box online" href="/#notifaction_scroll">
+					<div class="notifaction_photo_wrap">
+						<div class="photo_small">
+							<span class="photo_initials_small">KB</span>
+							<img src="images/notifaction_photo2.jpg" alt="">
+						</div>
+					</div>
+					<div class="notifaction_info">
+						<p class="notifaction_text">Meet your 4th week progress</p>
+						<p class="notifaction_date">5 minutes ago</p>
+					</div>
+				</a>
+				<a class="notifaction_box online" href="/#notifaction_scroll">
+					<div class="notifaction_photo_wrap">
+						<div class="photo_small">
+							<span class="photo_initials_small">KB</span>
+							<img src="images/notifaction_photo3.jpg" alt="">
+						</div>
+					</div>
+					<div class="notifaction_info">
+						<p class="notifaction_text">Steve Mitchel left a comment on your profile</p>
+						<p class="notifaction_date">2 hours ago</p>
+					</div>
+				</a>
+				<a class="notifaction_box online" href="/#notifaction_scroll">
+					<div class="notifaction_photo_wrap">
+						<div class="photo_small">
+							<span class="photo_initials_small">KB</span>
+							<img src="images/notifaction_photo1.jpg" alt="">
+						</div>
+					</div>
+					<div class="notifaction_info">
+						<p class="notifaction_text">Kate Blunt replied to your comment</p>
+						<p class="notifaction_date">yestarday</p>
+					</div>
+				</a>
+				<a class="notifaction_box" href="/#notifaction_scroll">
+					<div class="notifaction_photo_wrap">
+						<div class="photo_small">
+							<span class="photo_initials_small">KB</span>
+							<img src="images/notifaction_photo1.jpg" alt="">
+						</div>
+					</div>
+					<div class="notifaction_info">
+						<p class="notifaction_text">Kate Blunt left a comment on your profile</p>
+						<p class="notifaction_date">2 days ago</p>
+					</div>
+				</a>
+				<a class="notifaction_box" href="/#notifaction_scroll">
+					<div class="notifaction_photo_wrap">
+						<div class="photo_small">
+							<span class="photo_initials_small">KB</span>
+							<img src="images/notifaction_photo4.jpg" alt="">
+						</div>
+					</div>
+					<div class="notifaction_info">
+						<p class="notifaction_text">Lucy Wang replied to your comment</p>
+						<p class="notifaction_date">1 week ago</p>
+					</div>
+				</a>
+				<a class="notifaction_box" href="/#notifaction_scroll">
+					<div class="notifaction_photo_wrap">
+						<div class="photo_small">
+							<span class="photo_initials_small">KB</span>
+							<img src="images/notifaction_photo5.jpg" alt="">
+						</div>
+					</div>
+					<div class="notifaction_info">
+						<p class="notifaction_text">Jane Simons replied to your comment</p>
+						<p class="notifaction_date">1 week ago</p>
+					</div>
+				</a>
+				<a class="notifaction_box" href="/#notifaction_scroll">
+					<div class="notifaction_photo_wrap">
+						<div class="photo_small">
+							<span class="photo_initials_small">KB</span>
+							<img src="images/notifaction_photo1.jpg" alt="">
+						</div>
+					</div>
+					<div class="notifaction_info">
+						<p class="notifaction_text">Kate Blunt replied to your comment</p>
+						<p class="notifaction_date">1 week ago</p>
+					</div>
+				</a>
+				<a class="notifaction_box" href="/#notifaction_scroll">
+					<div class="notifaction_photo_wrap">
+						<div class="photo_small">
+							<span class="photo_initials_small">KB</span>
+							<img src="images/notifaction_photo1.jpg" alt="">
+						</div>
+					</div>
+					<div class="notifaction_info">
+						<p class="notifaction_text">Kate Blunt replied to your comment</p>
+						<p class="notifaction_date">2 weeks ago</p>
+					</div>
+				</a>
+				<a class="notifaction_box" href="/#notifaction_scroll">
+					<div class="notifaction_photo_wrap">
+						<div class="photo_small">
+							<span class="photo_initials_small">KB</span>
+							<img src="images/notifaction_photo1.jpg" alt="">
+						</div>
+					</div>
+					<div class="notifaction_info">
+						<p class="notifaction_text">Kate Blunt replied to your comment</p>
+						<p class="notifaction_date">2 weeks ago</p>
+					</div>
+				</a>
+				<a class="notifaction_box" href="/#notifaction_scroll">
+					<div class="notifaction_photo_wrap">
+						<div class="photo_small">
+							<span class="photo_initials_small">KB</span>
+							<img src="images/notifaction_photo5.jpg" alt="">
+						</div>
+					</div>
+					<div class="notifaction_info">
+						<p class="notifaction_text">Jane Simons replied to your comment</p>
+						<p class="notifaction_date">2 weeks ago</p>
+					</div>
+				</a>
+				<a class="notifaction_box" href="/#notifaction_scroll">
+					<div class="notifaction_photo_wrap">
+						<div class="photo_small">
+							<span class="photo_initials_small">KB</span>
+							<img src="images/notifaction_photo1.jpg" alt="">
+						</div>
+					</div>
+					<div class="notifaction_info">
+						<p class="notifaction_text">Kate Blunt replied to your comment</p>
+						<p class="notifaction_date">2 weeks ago</p>
+					</div>
+				</a>
+				<a class="notifaction_box" href="/#notifaction_scroll">
+					<div class="notifaction_photo_wrap">
+						<div class="photo_small">
+							<span class="photo_initials_small">KB</span>
+							<img src="images/notifaction_photo5.jpg" alt="">
+						</div>
+					</div>
+					<div class="notifaction_info">
+						<p class="notifaction_text">Jane Simons replied to your comment</p>
+						<p class="notifaction_date">2 weeks ago</p>
+					</div>
+				</a>
+				<a class="notifaction_box" href="/#notifaction_scroll">
+					<div class="notifaction_photo_wrap">
+						<div class="photo_small">
+							<span class="photo_initials_small">KB</span>
+							<img src="images/notifaction_photo1.jpg" alt="">
+						</div>
+					</div>
+					<div class="notifaction_info">
+						<p class="notifaction_text">Kate Blunt replied to your comment</p>
+						<p class="notifaction_date">2 weeks ago</p>
+					</div>
+				</a>
+				<a class="notifaction_box" href="/#notifaction_scroll">
+					<div class="notifaction_photo_wrap">
+						<div class="photo_small">
+							<span class="photo_initials_small">KB</span>
+							<img src="images/notifaction_photo5.jpg" alt="">
+						</div>
+					</div>
+					<div class="notifaction_info">
+						<p class="notifaction_text">Jane Simons replied to your comment</p>
+						<p class="notifaction_date">2 weeks ago</p>
+					</div>
+				</a>
+				<a class="notifaction_box" href="/#notifaction_scroll">
+					<div class="notifaction_photo_wrap">
+						<div class="photo_small">
+							<span class="photo_initials_small">KB</span>
+							<img src="images/notifaction_photo1.jpg" alt="">
+						</div>
+					</div>
+					<div class="notifaction_info">
+						<p class="notifaction_text">Kate Blunt replied to your comment</p>
+						<p class="notifaction_date">2 weeks ago</p>
+					</div>
+				</a>
+				<a class="notifaction_box" href="/#notifaction_scroll">
+					<div class="notifaction_photo_wrap">
+						<div class="photo_small">
+							<span class="photo_initials_small">KB</span>
+							<img src="images/notifaction_photo5.jpg" alt="">
+						</div>
+					</div>
+					<div class="notifaction_info">
+						<p class="notifaction_text">Jane Simons replied to your comment</p>
+						<p class="notifaction_date">2 weeks ago</p>
+					</div>
+				</a>
+				<a class="notifaction_box" href="/#notifaction_scroll">
+					<div class="notifaction_photo_wrap">
+						<div class="photo_small">
+							<span class="photo_initials_small">KB</span>
+							<img src="images/notifaction_photo1.jpg" alt="">
+						</div>
+					</div>
+					<div class="notifaction_info">
+						<p class="notifaction_text">Kate Blunt replied to your comment</p>
+						<p class="notifaction_date">2 weeks ago</p>
+					</div>
+				</a>
+				<a class="notifaction_box" href="/#notifaction_scroll">
+					<div class="notifaction_photo_wrap">
+						<div class="photo_small">
+							<span class="photo_initials_small">KB</span>
+							<img src="images/notifaction_photo5.jpg" alt="">
+						</div>
+					</div>
+					<div class="notifaction_info">
+						<p class="notifaction_text">Jane Simons replied to your comment</p>
+						<p class="notifaction_date">2 weeks ago</p>
+					</div>
+				</a>
+				<a class="notifaction_box" href="/#notifaction_scroll">
+					<div class="notifaction_photo_wrap">
+						<div class="photo_small">
+							<span class="photo_initials_small">KB</span>
+							<img src="images/notifaction_photo1.jpg" alt="">
+						</div>
+					</div>
+					<div class="notifaction_info">
+						<p class="notifaction_text">Kate Blunt replied to your comment</p>
+						<p class="notifaction_date">2 weeks ago</p>
+					</div>
+				</a>
+				<a class="notifaction_box" href="/#notifaction_scroll">
+					<div class="notifaction_photo_wrap">
+						<div class="photo_small">
+							<span class="photo_initials_small">KB</span>
+							<img src="images/notifaction_photo5.jpg" alt="">
+						</div>
+					</div>
+					<div class="notifaction_info">
+						<p class="notifaction_text">Jane Simons replied to your comment</p>
+						<p class="notifaction_date">2 weeks ago</p>
+					</div>
+				</a>
+				<a class="notifaction_box" href="/#notifaction_scroll">
+					<div class="notifaction_photo_wrap">
+						<div class="photo_small">
+							<span class="photo_initials_small">KB</span>
+							<img src="images/notifaction_photo1.jpg" alt="">
+						</div>
+					</div>
+					<div class="notifaction_info">
+						<p class="notifaction_text">Kate Blunt replied to your comment</p>
+						<p class="notifaction_date">2 weeks ago</p>
+					</div>
+				</a>
+				<a class="notifaction_box" href="/#notifaction_scroll">
+					<div class="notifaction_photo_wrap">
+						<div class="photo_small">
+							<span class="photo_initials_small">KB</span>
+							<img src="images/notifaction_photo5.jpg" alt="">
+						</div>
+					</div>
+					<div class="notifaction_info">
+						<p class="notifaction_text">Jane Simons replied to your comment</p>
+						<p class="notifaction_date">2 weeks ago</p>
+					</div>
+				</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="popup_confirm" id="confirm_logout">
+		<div class="popup_confirm_box">
+			<p class="popup_confirm_text">Are you sure you want to log out?</p>
+			<div class="popup_confirmation">
+				<a class="popup_confirm_yes" href="#">Yes</a>
+				<a class="popup_confirm_no" href="#">No</a>
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="js/svg4everybody.min.js"></script>
+	<script type="text/javascript" src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+    
+</body>
+</html>
