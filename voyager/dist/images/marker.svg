@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="46" height="63" viewBox="0 0 46 63">
+    <defs>
+        <filter id="prefix__a" width="185.7%" height="151.7%" x="-42.9%" y="-26.7%" filterUnits="objectBoundingBox">
+            <feMorphology in="SourceAlpha" operator="dilate" radius="2" result="shadowSpreadOuter1"/>
+            <feOffset dy="2" in="shadowSpreadOuter1" result="shadowOffsetOuter1"/>
+            <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="3"/>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"/>
+            <feColorMatrix in="shadowBlurOuter1" result="shadowMatrixOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"/>
+            <feMorphology in="SourceAlpha" operator="dilate" radius="3" result="shadowSpreadOuter2"/>
+            <feOffset in="shadowSpreadOuter2" result="shadowOffsetOuter2"/>
+            <feGaussianBlur in="shadowOffsetOuter2" result="shadowBlurOuter2" stdDeviation="3"/>
+            <feComposite in="shadowBlurOuter2" in2="SourceAlpha" operator="out" result="shadowBlurOuter2"/>
+            <feColorMatrix in="shadowBlurOuter2" result="shadowMatrixOuter2" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.05 0"/>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"/>
+                <feMergeNode in="shadowMatrixOuter2"/>
+            </feMerge>
+        </filter>
+        <filter id="prefix__c" width="167.9%" height="140.6%" x="-33.9%" y="-21.1%" filterUnits="objectBoundingBox">
+            <feOffset dy="-1" in="SourceAlpha" result="shadowOffsetInner1"/>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" k2="-1" k3="1" operator="arithmetic" result="shadowInnerInner1"/>
+            <feColorMatrix in="shadowInnerInner1" values="0 0 0 0 0.0705882353 0 0 0 0 0.231372549 0 0 0 0 0.388235294 0 0 0 0.148901879 0"/>
+        </filter>
+        <path id="prefix__b" d="M14 0c7.735 0 14 6.251 14 13.969C28 24.494 15.393 29.977 14 45 12.607 29.977 0 24.494 0 13.969 0 6.25 6.265 0 14 0zm0 10c-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4-1.79-4-4-4z"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd" transform="translate(9 9)">
+        <g stroke-linejoin="round">
+            <use fill="#000" filter="url(#prefix__a)" xlink:href="#prefix__b"/>
+            <use fill="#FCBF00" xlink:href="#prefix__b"/>
+            <use fill="#000" filter="url(#prefix__c)" xlink:href="#prefix__b"/>
+            <path stroke="#FFF" stroke-width="3" d="M14-1.5c4.282 0 8.156 1.73 10.96 4.528 2.806 2.8 4.54 6.667 4.54 10.94 0 5.287-2.893 9.418-6.22 13.967-3.335 4.559-7.081 9.596-7.786 17.203h0-2.988c-.705-7.607-4.45-12.644-7.786-17.203-3.327-4.549-6.22-8.68-6.22-13.966 0-4.274 1.734-8.142 4.54-10.94C5.844.23 9.719-1.5 14-1.5zm0 13c-.69 0-1.315.28-1.768.732-.452.453-.732 1.078-.732 1.768s.28 1.315.732 1.768c.453.452 1.078.732 1.768.732s1.315-.28 1.768-.732c.452-.453.732-1.078.732-1.768s-.28-1.315-.732-1.768C15.315 11.78 14.69 11.5 14 11.5z"/>
+        </g>
+        <circle cx="14" cy="14" r="3" fill="#FFF"/>
+    </g>
+</svg>
